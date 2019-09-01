@@ -157,7 +157,7 @@ function Vehicle(x, y, dna) {
       ellipse(0, 0, this.dna[3] * 2);
     }
 
-    var gr = color(0, 255, 0);
+    var gr = color(255, 0, 255);
     var rd = color(255, 0, 0);
     var col = lerpColor(rd, gr, this.health);
 
