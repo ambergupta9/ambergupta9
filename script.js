@@ -53,14 +53,14 @@ function setup () {
 
 }
 
-function mouseDragged() {
+function mouseClicked() {
   vehicles.push(new Vehicle(mouseX, mouseY));
 }
 
 function draw() {
   background(0);
 
-  if (random(1) < 0.1) {
+  if (random(1) < 0.01) {
     var x = random(width);
     var y = random(height);
     food.push(createVector(x, y));
