@@ -1,6 +1,7 @@
 const articlesSection = document.querySelector(".writing");
+//aspittel
 
-axios.get(`https://dev.to/api/articles?username=aspittel`).then(articles => {
+axios.get(`https://dev.to/api/articles?username=ambergupta`).then(articles => {
   articles.data
     .sort((a, b) => a.positive_reactions_count - b.positive_reactions_count)
     .slice(20, 30)
