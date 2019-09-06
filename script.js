@@ -1,23 +1,3 @@
-const articlesSection = document.querySelector(".writing");
-//aspittel
-
-axios.get(`https://dev.to/api/articles?username=ambergupta`).then(articles => {
-  articles.data
-    .sort((a, b) => a.positive_reactions_count - b.positive_reactions_count)
-    .slice(20, 30)
-    .reverse()
-    .forEach(article => {
-      const link = document.createElement("a")
-      link.setAttribute("href", article.url)
-      link.textContent = article.title
-      articlesSection.appendChild(link)
-    })
-  const link = document.createElement("a")
-  link.setAttribute("href", "https://dev.to/aspittel")
-  link.setAttribute("style", "color:#ab47bc;")
-  link.textContent = "View All"
-  articlesSection.appendChild(link)
-})
 
 
 var vehicles = [];
